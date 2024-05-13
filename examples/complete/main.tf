@@ -6,12 +6,17 @@ data "alicloud_ecd_bundles" "bundles" {
   bundle_type = "SYSTEM"
 }
 
+resource "random_integer" "default" {
+  min = 10000  
+  max = 99999
+}
+
 module "default" {
   source                      = "../.."
   bundle_id                   = data.alicloud_ecd_bundles.bundles.bundles.0.id
   #alicloud_ecd_simple_office_site
   create_office_site          = true
-  office_site_name            = var.office_site_name
+  office_site_name            = "${var.office_site_name}-${random_integer.default.result}"
   cidr_block                  = "172.16.0.0/12"
   desktop_access_type         = var.desktop_access_type
   cen_id                      = ""
