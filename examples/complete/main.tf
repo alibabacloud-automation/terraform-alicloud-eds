@@ -7,13 +7,13 @@ data "alicloud_ecd_bundles" "bundles" {
 }
 
 resource "random_integer" "default" {
-  min = 10000  
+  min = 10000
   max = 99999
 }
 
 module "default" {
-  source                      = "../.."
-  bundle_id                   = data.alicloud_ecd_bundles.bundles.bundles.0.id
+  source    = "../.."
+  bundle_id = data.alicloud_ecd_bundles.bundles.bundles[0].id
   #alicloud_ecd_simple_office_site
   create_office_site          = true
   office_site_name            = "${var.office_site_name}-${random_integer.default.result}"

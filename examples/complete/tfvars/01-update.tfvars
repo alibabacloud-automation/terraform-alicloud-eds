@@ -20,32 +20,19 @@ html_file_transfer     = "all"
 visual_quality         = "medium"
 watermark_type         = "EndUserId"
 watermark_transparency = "LIGHT"
-authorize_access_policy_rules = {
-  description = "update_tf_access_policy_rule_description"
-  cidr_ip     = "1.2.3.42/24"
-}
-authorize_security_policy_rules = {
-  type        = "outflow"
-  policy      = "drop"
-  description = "update_tf_security_policy_rule_description"
-  port_range  = "8080/8080"
-  ip_protocol = "ALL"
-  priority    = "2"
-  cidr_ip     = "1.2.3.34/24"
-}
 #alicloud_ecd_desktop
-desktop_name       = "tf-test"
-amount             = 1
-auto_pay           = true
-auto_renew         = true
-desktop_type       = ""
-host_name          = "update-testhost-name"
-payment_type       = "PayAsYouGo"
-period             = 1
-period_unit        = "Year"
-desktop_status     = "Stopped"
-stopped_mode       = "StopCharging"
-user_assign_mode   = "PER_USER"
+desktop_name     = "tf-test"
+amount           = 1
+auto_pay         = true
+auto_renew       = true
+desktop_type     = ""
+host_name        = "update-testhost-name"
+payment_type     = "PayAsYouGo"
+period           = 1
+period_unit      = "Year"
+desktop_status   = "Stopped"
+stopped_mode     = "StopCharging"
+user_assign_mode = "PER_USER"
 tags = {
   Created = "TF"
 }
