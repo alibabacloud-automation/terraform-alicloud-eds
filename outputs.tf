@@ -20,20 +20,20 @@ output "desktop_id" {
 
 output "desktop_bundle_id" {
   description = "The bundle id list of the Desktop."
-  value       = concat(alicloud_ecd_desktop.desktop.*.bundle_id, [""])[0]
+  value       = concat(alicloud_ecd_desktop.desktop[*].bundle_id, [""])[0]
 }
 
 output "image_id" {
   description = "The resource ID in terraform of Image."
-  value       = concat(alicloud_ecd_image.image.*.id, [""])[0]
+  value       = concat(alicloud_ecd_image.image[*].id, [""])[0]
 }
 
 output "network_package_id" {
   description = "The resource ID in terraform of Network Package."
-  value       = concat(alicloud_ecd_network_package.network_package.*.id, [""])[0]
+  value       = concat(alicloud_ecd_network_package.network_package[*].id, [""])[0]
 }
 
 output "nas_file_system_id" {
   description = "The resource ID in terraform of Nas File System."
-  value       = concat(alicloud_ecd_nas_file_system.nas_file_system.*.id, [""])[0]
+  value       = concat(alicloud_ecd_nas_file_system.nas_file_system[*].id, [""])[0]
 }

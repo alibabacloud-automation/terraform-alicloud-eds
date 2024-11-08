@@ -232,8 +232,8 @@ variable "user_disk_size_gib" {
 variable "tags" {
   description = "A mapping of tags to assign to the resource."
   type        = map(string)
-  default     = {
-      Created = "TF"
+  default = {
+    Created = "TF"
   }
 }
 #alicloud_ecd_network_package
