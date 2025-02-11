@@ -8,13 +8,13 @@ variable "create_office_site" {
 variable "office_site_name" {
   description = "The office site name."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "cidr_block" {
   description = "Workspace Corresponds to the Security Office Network of IPv4 Segment."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "desktop_access_type" {
@@ -69,25 +69,25 @@ variable "create_user" {
 variable "end_user_id" {
   description = "The Username. The custom setting is composed of lowercase letters, numbers and underscores, and the length is 3~24 characters."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "user_email" {
   description = "The email of the user email."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "user_phone" {
   description = "The phone of the mobile phone number."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "user_password" {
   description = "The password of the user password."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "user_status" {
@@ -106,7 +106,7 @@ variable "create_policy_group" {
 variable "policy_group_name" {
   description = "The name of policy group."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "policy_clipboard" {
@@ -148,7 +148,7 @@ variable "authorize_security_policy_rules" {
 variable "domain_list" {
   description = "The list of domain."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "html_access" {
@@ -172,13 +172,13 @@ variable "visual_quality" {
 variable "watermark_transparency" {
   description = "The watermark transparency. Valid values: DARK, LIGHT, MIDDLE."
   type        = string
-  default     = "DARK"
+  default     = null
 }
 
 variable "watermark_type" {
   description = "The type of watemark. Valid values: EndUserId, HostName."
   type        = string
-  default     = "HostName"
+  default     = null
 }
 
 #alicloud_ecd_desktop
@@ -191,31 +191,31 @@ variable "create_desktop" {
 variable "desktop_name" {
   description = " The desktop name of the Desktop."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "user_id" {
   description = "The desktop end user id of the Desktop.It will be ignored when create_user = true"
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "bundle_id" {
   description = "The bundle id of the Desktop."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "office_site_id" {
   description = "The ID of the Simple Office Site."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "policy_group_id" {
   description = "The policy group id of the Desktop.It will be ignored when create_policy_group = true"
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "amount" {
@@ -239,13 +239,13 @@ variable "auto_renew" {
 variable "desktop_type" {
   description = "The desktop type of the Desktop."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "host_name" {
   description = " The hostname of the Desktop."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "payment_type" {
@@ -311,7 +311,7 @@ variable "create_network_package" {
 variable "bandwidth" {
   description = "The bandwidth of package public network bandwidth peak. Valid values: 1~200. Unit:Mbps."
   type        = string
-  default     = ""
+  default     = null
 }
 
 #alicloud_ecd_nas_file_system
@@ -324,7 +324,7 @@ variable "create_nas_file_system" {
 variable "nas_file_system_description" {
   description = "The description of nas file system."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "mount_target_domain" {
@@ -342,7 +342,7 @@ variable "reset" {
 variable "nas_file_system_name" {
   description = "The name of nas file system."
   type        = string
-  default     = ""
+  default     = null
 }
 #alicloud_ecd_image
 variable "create_image" {
@@ -354,17 +354,17 @@ variable "create_image" {
 variable "image_name" {
   description = "The name of the image."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "image_description" {
   description = "The description of the image."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "desktop_id" {
   description = "The desktop id of the desktop.It will be ignored when create_desktop = true"
   type        = string
-  default     = ""
+  default     = null
 }
