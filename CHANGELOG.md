@@ -1,4 +1,9 @@
-## 1.1.0 (Unreleased)
+## 2.1.0 (Unreleased)
+## 2.0.0 (2025-02-11)
+
+- module: update default value [GH-4](https://github.com/alibabacloud-automation/terraform-alicloud-eds/pull/4)
+- examples: improve the examples [GH-3](https://github.com/alibabacloud-automation/terraform-alicloud-eds/pull/3)
+- examples/complete: improve the examples [GH-2](https://github.com/alibabacloud-automation/terraform-alicloud-eds/pull/2)
 
 ## 1.0.0 (2022-03-03)
 
