@@ -1,5 +1,5 @@
 provider "alicloud" {
-  region = "cn-shanghai"
+  region = "cn-zhangjiakou"
 }
 
 data "alicloud_ecd_bundles" "bundles" {

@@ -135,13 +135,13 @@ variable "visual_quality" {
 variable "watermark_transparency" {
   description = "The watermark transparency. Valid values: DARK, LIGHT, MIDDLE."
   type        = string
-  default     = "DARK"
+  default     = null
 }
 
 variable "watermark_type" {
   description = "The type of watemark. Valid values: EndUserId, HostName."
   type        = string
-  default     = "HostName"
+  default     = null
 }
 
 #alicloud_ecd_desktop
@@ -208,7 +208,7 @@ variable "root_disk_size_gib" {
 variable "desktop_status" {
   description = "The status of the Desktop. Valid values: Deleted, Expired, Pending, Running, Starting, Stopped, Stopping."
   type        = string
-  default     = "Pending"
+  default     = null
 }
 
 variable "stopped_mode" {
@@ -247,7 +247,7 @@ variable "bandwidth" {
 variable "mount_target_domain" {
   description = "The domain of mount target."
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "reset" {
