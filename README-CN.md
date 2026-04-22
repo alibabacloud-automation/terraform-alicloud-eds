@@ -72,12 +72,13 @@ module "default" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=0.13 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.200.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | n/a |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.200.0 |
 
 ## Modules
 
@@ -87,13 +88,13 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [alicloud_ecd_desktop.desktop](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/ecd_desktop) | resource |
-| [alicloud_ecd_image.image](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/ecd_image) | resource |
-| [alicloud_ecd_nas_file_system.nas_file_system](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/ecd_nas_file_system) | resource |
-| [alicloud_ecd_network_package.network_package](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/ecd_network_package) | resource |
-| [alicloud_ecd_policy_group.policy_group](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/ecd_policy_group) | resource |
-| [alicloud_ecd_simple_office_site.office_site](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/ecd_simple_office_site) | resource |
-| [alicloud_ecd_user.user](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/ecd_user) | resource |
+| [alicloud_ecd_desktop.desktop](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/ecd_desktop) | resource |
+| [alicloud_ecd_image.image](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/ecd_image) | resource |
+| [alicloud_ecd_nas_file_system.nas_file_system](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/ecd_nas_file_system) | resource |
+| [alicloud_ecd_network_package.network_package](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/ecd_network_package) | resource |
+| [alicloud_ecd_policy_group.policy_group](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/ecd_policy_group) | resource |
+| [alicloud_ecd_simple_office_site.office_site](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/ecd_simple_office_site) | resource |
+| [alicloud_ecd_user.user](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/ecd_user) | resource |
 
 ## Inputs
 
